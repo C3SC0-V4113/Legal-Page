@@ -26,6 +26,29 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/*
+  first number x second y
+*/
+.custom-background {
+  @apply bg-black; /* hsla(218, 31%, 6%, 1) */
+  background-image: radial-gradient(
+      circle at -40% 80%,
+      hsla(267, 59%, 41%, 1) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 180% 120%,
+      hsla(267, 59%, 41%, 1) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 40% 180%,
+      hsla(267, 59%, 41%, 1) 0%,
+      transparent 30%
+    );
+  background-blend-mode: normal, normal, normal;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
