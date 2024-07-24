@@ -16,7 +16,7 @@
     --secondary-foreground: 269 55% 60%;
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 217 10% 65%;
-    --accent: 220 14.3% 95.9%;
+    --accent: 267 59% 41%;
     --accent-foreground: 269 55% 45%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
@@ -67,14 +67,14 @@
       transparent 60%
     ),
     radial-gradient(
-      circle at 180% 120%,
+      circle at 180% 30%,
       hsla(267, 59%, 41%, 1) 0%,
-      transparent 60%
+      transparent 90%
     ),
     radial-gradient(
-      circle at 40% 180%,
+      circle at 50% 0%,
       hsla(267, 59%, 41%, 1) 0%,
-      transparent 30%
+      transparent 60%
     );
   background-blend-mode: normal, normal, normal;
 }

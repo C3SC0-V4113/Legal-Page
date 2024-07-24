@@ -14,7 +14,7 @@ export const ImageHeader = ({
         priority
         fill
       />
-      <div className="flex flex-col gap-4 z-50 relative py-12 px-2 max-w-prose items-center">
+      <div className="flex flex-col gap-4 z-50 relative py-12 md:py-16 px-2 max-w-prose items-center">
         {children}
       </div>
     </div>

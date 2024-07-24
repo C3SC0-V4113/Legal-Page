@@ -59,9 +59,9 @@ export const LegalSolutions = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 mt-6">
       {solutions.map(({ id, title, cta, items }) => (
-        <Card key={id}>
+        <Card className="rounded-3xl" key={id}>
           <CardHeader>
-            <CardTitle className="bg-clip-text text-transparent bg-gradient-to-r from-accent-foreground to-primary-foreground md:text-center">
+            <CardTitle className="bg-clip-text text-transparent mb-4 bg-gradient-to-r from-accent-foreground to-primary-foreground md:text-center">
               {title}
             </CardTitle>
             <Separator className="bg-muted-foreground opacity-25" />

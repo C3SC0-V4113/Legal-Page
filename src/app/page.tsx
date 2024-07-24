@@ -1,12 +1,12 @@
-import { ImageHeader } from "@/components/ui/image-header";
+import { ImageHeader } from "@/components/pages/image-header";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { LegalSolutions } from "@/components/pages/legal-solutions";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center max-w-screen-2xl mx-auto">
+    <>
       <ImageHeader>
-        <h1 className="text-3xl md:text-center">
+        <h1 className="text-4xl md:text-5xl md:text-center">
           Un Proceso simple y humano para brindarte apoyo legal
         </h1>
         <GradientButton className="min-w-48 md:max-w-60">
@@ -24,6 +24,6 @@ export default function Home() {
         </p>
         <LegalSolutions />
       </div>
-    </div>
+    </>
   );
 }
