@@ -22,14 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          poppins.className,
-          "custom-background bg-repeat-y md:px-12 xl:px-20 2xl:px-28"
-        )}
-      >
+      <body className={cn(poppins.className, "custom-background bg-repeat-y")}>
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center max-w-screen-2xl mx-auto">
+        <main className="flex min-h-screen flex-col items-center max-w-screen-2xl mx-auto md:px-12 xl:px-20 2xl:px-28">
           {children}
         </main>
         <Footer />

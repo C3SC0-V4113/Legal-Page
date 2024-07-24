@@ -12,7 +12,7 @@ export const Footer = () => {
           <stop stopColor="#7134b2" offset="100%" />
         </linearGradient>
       </svg>
-      <footer className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 lg:mt-12 px-2 max-w-screen-2xl mx-auto md:px-0">
+      <footer className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 lg:mt-12 px-2 max-w-screen-2xl mx-auto md:px-12 xl:px-20 2xl:px-28">
         <div className="flex gap-4">
           <p className="text-muted-foreground basis-1/2 text-xs text-right mt-1">
             Más sobre nosotros
