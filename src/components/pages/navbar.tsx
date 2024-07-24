@@ -1,5 +1,7 @@
-import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
-import { NavItem } from "../ui/nav-item";
+"use client";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { DesktopNav } from "../ui/desktop-nav";
+import { MobileNav } from "../ui/mobile-nav";
 
 const navItems = [
   {
@@ -13,15 +15,14 @@ const navItems = [
 ];
 
 export const Navbar = () => {
+  const matches = useMediaQuery("(min-width: 1024px)");
   return (
-    <nav className="flex justify-end px-4 md:px-0 h-16">
-      <NavigationMenu>
-        <NavigationMenuList className="space-x-8">
-          {navItems.map((navItem, key) => (
-            <NavItem key={key} {...navItem} />
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
-    </nav>
+    <header className="flex justify-end px-4 md:px-0 h-16">
+      {matches ? (
+        <DesktopNav navItems={navItems} />
+      ) : (
+        <MobileNav navItems={navItems} />
+      )}
+    </header>
   );
 };
