@@ -17,7 +17,7 @@ const navItems = [
 export const Navbar = () => {
   const matches = useMediaQuery("(min-width: 1024px)");
   return (
-    <header className="flex justify-end px-4 md:px-0 h-16">
+    <header className="flex justify-end px-4 md:px-0 h-16 max-w-screen-2xl mx-auto">
       {matches ? (
         <DesktopNav navItems={navItems} />
       ) : (

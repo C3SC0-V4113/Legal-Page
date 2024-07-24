@@ -9,7 +9,6 @@ interface Props {
 }
 
 export const DesktopNav = ({ navItems }: Props) => {
-  console.log("Hola desde el servidor");
   return (
     <NavigationMenu className="flex">
       <NavigationMenuList className="space-x-8">
