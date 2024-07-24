@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "../lib/utils";
 import { Footer } from "@/components/pages/footer";
+import { Navbar } from "@/components/pages/navbar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           "custom-background bg-repeat-y md:px-12 xl:px-20 2xl:px-28"
         )}
       >
+        <Navbar />
         <main className="flex min-h-screen flex-col items-center max-w-screen-2xl mx-auto">
           {children}
         </main>
