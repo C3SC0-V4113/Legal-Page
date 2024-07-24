@@ -12,7 +12,7 @@ export const Footer = () => {
           <stop stopColor="#7134b2" offset="100%" />
         </linearGradient>
       </svg>
-      <footer className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-6 md:mt-12 px-2 max-w-screen-2xl mx-auto">
+      <footer className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 lg:mt-12 px-2 max-w-screen-2xl mx-auto md:px-0">
         <div className="flex gap-4">
           <p className="text-muted-foreground basis-1/2 text-xs text-right mt-1">
             Más sobre nosotros
@@ -35,18 +35,18 @@ export const Footer = () => {
             <p>Configuración de cookies</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row">
-          <p className="text-center md:text-muted-foreground md:text-xs md:my-2 md:basis-1/2 md:text-right">
+        <div className="flex flex-col lg:flex-row lg:gap-4">
+          <p className="text-center lg:text-muted-foreground lg:text-xs lg:my-2 lg:basis-1/2 lg:text-right">
             Síguenos en:
           </p>
-          <div className="flex justify-center align-middle gap-4 md:gap-2 py-4 md:py-0 md:basis-1/2">
-            <Button variant={"ghost"}>
+          <div className="flex justify-center align-middle gap-4 lg:gap-2 py-4 lg:py-0 lg:basis-1/2">
+            <Button variant={"ghost"} aria-label="Facebook">
               <Facebook size={24} style={{ stroke: "url(#blue-gradient)" }} />
             </Button>
-            <Button variant={"ghost"}>
+            <Button variant={"ghost"} aria-label="Instagram">
               <Instagram size={24} style={{ stroke: "url(#blue-gradient)" }} />
             </Button>
-            <Button variant={"ghost"}>
+            <Button variant={"ghost"} aria-label="X (Formerly Twitter)">
               <FaXTwitter size={24} style={{ fill: "url(#blue-gradient)" }} />
             </Button>
           </div>

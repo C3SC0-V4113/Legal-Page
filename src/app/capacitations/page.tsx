@@ -1,9 +1,14 @@
 import { CapacitationsCards } from "@/components/pages/capacitations-cards";
 import { ImageHeader } from "@/components/pages/image-header";
 import { Separator } from "@/components/ui/separator";
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 
 interface Props {}
+
+export const metadata: Metadata = {
+  title: "Capacitaciones",
+  description: "Capacitaciones",
+};
 
 const Page: NextPage<Props> = ({}) => {
   return (
@@ -15,9 +20,9 @@ const Page: NextPage<Props> = ({}) => {
         </h1>
       </ImageHeader>
       <div className="grid grid-cols-1 md:grid-cols-2 w-full px-2 gap-4">
-        <p className="col-span-full mt-8 text-center md:text-left">
+        <h2 className="col-span-full mt-8 text-center md:text-left">
           Explora como Igualítika puede ayudarte
-        </p>
+        </h2>
         <Separator className="col-span-full mb-6" />
         <CapacitationsCards />
       </div>
