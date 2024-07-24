@@ -20,7 +20,7 @@ export const MobileNav = ({ navItems }: Props) => {
   return (
     <div className="flex">
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger aria-label="Abrir Menu">
           <Menu />
         </SheetTrigger>
         <SheetContent>
